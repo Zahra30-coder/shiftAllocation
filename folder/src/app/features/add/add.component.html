@@ -1,0 +1,155 @@
+<div id="section" style=" margin: 20px 450px;">
+  <!-- <div style="padding: 75px 0px; margin: 70px;">
+    <div class="col-md-6 border shadow" style="padding: 75px 0px; margin: 70px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+           
+        </div>
+      </div>
+    </div>
+    
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" >
+      <div class="row">
+        <div class="col-xl-12 order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+             
+            </div>
+            <div class="card-body">
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-father-name">Assigned On</label>
+                      <input type="text" id="input-father-name" class="form-control" placeholder="" formControlName="assignedOn" readonly>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="deptSelection">Shift Name</label>
+                      
+                      <select id="deptSelection" class="form-control-alternative" formControlName="shiftName">
+                        <option value="" disabled selected>Select your shift</option>
+                        <option *ngFor="let s of shiftName" [value]="s.value">{{ s.label }}</option>
+                      </select>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="startDate">Shift Date</label>
+                      <input type="date" id="startDate" class="form-control" placeholder="dd-mm-yyyy" formControlName="shiftDate">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="endDate">End Date</label>
+                      <br>
+                      <label class="form-control-label" for="hour">Hour:Minute</label>
+                      <input type="time" id="endDate" class="form-control" formControlName="endDate">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="startTime">Shift Start Time</label>
+                      <input type="time" id="startTime" class="form-control " formControlName="shiftStartTime">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="endTime">Shift End Time</label>
+                      <input type="time" id="endTime" class="form-control " formControlName="shiftEndTime">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-last-name">Employee Id</label>
+                    <input type="text" id="i" class="form-control" placeholder="Employee Id" formControlName="employeeId">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="! myForm.valid">Submit</button>
+
+     
+    </form> -->
+
+   <!-- FINAL SHIFT FORM  -->
+   <!-- <h1 class="m-auto p-3 shadow text-center"> ADD SHIFT </h1> -->
+    <!-- shift form -->
+    <div class="container">
+      <div class="col-md-6 border shadow" style="border: box 1px solid black; box-shadow: 10px 10px 5px black; ">
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="form-row" style="padding: 20px">
+
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label class="form-control-label" for="deptSelection"  style="font-size: 24px;">Shift Name</label>
+              
+              <select id="deptSelection" class="form-control-alternative" formControlName="shiftName">
+                <option value="" disabled selected>Select your shift</option>
+                <option *ngFor="let s of shiftName" [value]="s.value" class="col-md-6">{{ s.label }}</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <!-- <label class="form-control-label" for="input-father-name"style="font-size: 24px;">Assigned On</label> -->
+            <input type="text" id="input-father-name" class="form-control" placeholder="" formControlName="assignedOn" readonly>
+          </div>
+    
+
+           <!---------------    SHIFT DATE                    ----------------------->
+
+          <div class="row">
+            <div class="mb-3">
+              <div class="form-group">
+                <label class="form-control-label" for="startDate"  style="font-size: 24px;">Start Date</label>
+                <input type="date" id="startDate" class="form-control" placeholder="dd-mm-yyyy" formControlName="startDate">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-group">
+                <label class="form-control-label" for="endDate"  style="font-size: 24px;">End Date</label>
+                <br>
+                <label class="form-control-label" for="hour">Hour:Minute</label>
+                <input type="date" id="endDate" class="form-control" placeholder="dd-mm-yyyy" formControlName="endDate">
+              </div>
+            </div>
+          </div>
+
+          <!--                            SHIFT TIME                 -->
+
+          <div class="row">
+            <div class="mb-3">
+              <div class="form-group">
+                <label class="form-control-label" for="startTime"  style="font-size: 24px;">Shift Start Time</label>
+                <input type="time" id="startTime" class="form-control " formControlName="shiftStartTime">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-group">
+                <label class="form-control-label" for="endTime"  style="font-size: 24px;">Shift End Time</label>
+                <input type="time" id="endTime" class="form-control " formControlName="shiftEndTime">
+              </div>
+            </div>
+          </div>
+
+          <!-- <button type="submit" class="btn btn-primary" [disabled]="! myForm.valid">Submit</button> -->
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        
+        </form>
+      </div>
+    </div>
+
+      

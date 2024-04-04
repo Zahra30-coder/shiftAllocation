@@ -1,0 +1,85 @@
+{
+  "shift": [
+    {
+      "id": "aa7e",
+      "assignedOn": "2024-01-15",
+      "shiftName": "MorningShift",
+      "startDate": "2024-01-23",
+      "endDate": "2024-01-26",
+      "shiftStartTime": "15:36",
+      "shiftEndTime": "14:36",
+      "employeeId": "John"
+    },
+    {
+      "id": "294c",
+      "assignedOn": "2024-01-15",
+      "shiftName": "MorningShift",
+      "startDate": "2024-01-23",
+      "endDate": "2024-01-26",
+      "shiftStartTime": "15:36",
+      "shiftEndTime": "14:36",
+      "employeeId": "zahra"
+    },
+    {
+      "id": "480c",
+      "assignedOn": "2024-01-24",
+      "shiftName": "NightShift",
+      "startDate": "2024-01-25",
+      "endDate": "2024-01-26",
+      "shiftStartTime": "15:46",
+      "shiftEndTime": "19:46",
+      "employeeId": "aer"
+    },
+    {
+      "id": "aa7e",
+      "assignedOn": "2024-01-15",
+      "shiftName": "MorningShift",
+      "startDate": "2024-01-23",
+      "endDate": "2024-01-26",
+      "shiftStartTime": "15:36",
+      "shiftEndTime": "14:36",
+      "employeeId": "John"
+    },
+    {
+      "id": "294c",
+      "assignedOn": "2024-01-15",
+      "shiftName": "MorningShift",
+      "startDate": "2024-01-23",
+      "endDate": "2024-01-26",
+      "shiftStartTime": "15:36",
+      "shiftEndTime": "14:36",
+      "employeeId": "zahra"
+    },
+    {
+      "id": "480c",
+      "assignedOn": "2024-01-24",
+      "shiftName": "NightShift",
+      "startDate": "2024-01-25",
+      "endDate": "2024-01-26",
+      "shiftStartTime": "15:46",
+      "shiftEndTime": "19:46",
+      "employeeId": "aer"
+    },
+    {
+      "id": "dee8",
+      "assignedOn": "2024-04-04",
+      "shiftName": "",
+      "startDate": "2024-04-05",
+      "endDate": "2024-04-05",
+      "shiftStartTime": "11:32",
+      "shiftEndTime": "12:32",
+      "employeeId": ""
+    }
+  ],
+  "delShift": [
+    {
+      "id": "aa7e",
+      "shiftName": "MorningShift",
+      "startDate": "2024-01-23",
+      "endDate": "2024-01-26",
+      "shiftStartTime": "15:36",
+      "shiftEndTime": "14:36",
+      "employeeId": "zahra"
+    }
+  ]
+}

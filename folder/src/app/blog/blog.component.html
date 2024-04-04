@@ -1,0 +1,147 @@
+<!-- <!-- <!-- <div class="table-responsive min-height-630" id="table-scroll">
+  
+
+  
+  <table class="table align-items-center table-flush">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Assingned On</th>
+        <th scope="col">Shift Name</th>
+        <th scope="col">Shift Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Shift Start Time</th>
+        <th scope="col">Shift End Time</th>
+        <th scope="col">sloyee Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center" *ngFor="let s of allShifts ;let i=index">
+        <!-- <th scope="row">{{i+1}}</th> 
+        <td>{{s.assignedOn}}</td>&nbsp;
+        <td>{{s.shiftName}}</td>&nbsp;
+        <td>{{s.startDate}}</td>&nbsp;
+        <td>{{s.endDate}}</td>&nbsp;
+
+        <td>{{s.shiftStartTime}}</td>&nbsp;
+        <td>{{s.shiftEndTime}}</td>&nbsp;
+        <td>{{s.sloyeeId}}</td>&nbsp;  
+      </tr>
+      <!-- <td >
+        <button (click)="deletePost(s.id)">
+          CANCEL
+        </button>
+      </td>
+      <td>
+        <button>
+          <a [routerLink]="['edit',s.id]">UPDATE</a>                  
+       </button>
+      </td> 
+
+
+    </tbody>
+  </table>
+</div> -->
+<!-- <br/>
+<br/>
+<br/>
+<h1 class="m-auto p-3 shadow text-center"> SHIFT DETAILS</h1>
+<div style="margin: 0px 70px;">
+  <table class="table table-hover p-3 mb-3">
+    <thead class="" style="font-size: 20px;">
+      <tr> 
+        &nbsp;
+        
+        <th scope="col">Assingned On</th>
+        <th scope="col">Shift Name</th>
+        <th scope="col">Shift Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Shift Start Time</th>
+        <th scope="col">Shift End Time</th>
+        <th scope="col">sloyee Id</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="r" *ngFor="let s of allShifts;let i=index" [ngClass]="{'table-success': i % 2 === 0, 'table-warning': i % 2 !== 0}">        
+        
+        <td>{{s.assignedOn}}</td>&nbsp;
+        <td>{{s.shiftName}}</td>&nbsp;
+        <td>{{s.startDate}}</td>&nbsp;
+        <td>{{s.endDate}}</td>&nbsp;
+        <td>{{s.shiftStartTime}}</td>&nbsp;
+        <td>{{s.shiftEndTime}}</td>&nbsp;
+        <td>{{s.sloyeeId}}</td>&nbsp;  
+      </tr>
+
+      &nbsp;
+
+        <td><button class="btn btn-danger" (click)="deletePost(s.id)">DELETE</button>
+
+        <td>
+          <button class="btn btn-primary">  -->
+            <!-- <a style="color: white;"[routerLink]="['edit', s.id]">UPDATE</a> 
+          </button>
+        </td>
+      
+    </tbody>
+  </table>
+</div> -->
+
+
+<br/>
+<br/>
+<br/>
+<div style="margin: 0px 150px;">
+  <table class="table table-hover p-3 mb-3">
+    <thead class="" style="font-size: 18px;">
+      <tr> 
+        &nbsp;
+        <!-- <th scope="col">Id</th> -->
+        <th scope="col">Assingned On</th> &nbsp;
+        <th scope="col">Shift Name</th> &nbsp;
+        <th scope="col">Shift Date</th>&nbsp;
+        <th scope="col">End Date</th>&nbsp;
+        <th scope="col">Shift Start Time</th>&nbsp;
+        <th scope="col">Shift End Time</th>&nbsp;
+        <!-- <th scope="col">Employee Id</th>&nbsp; -->
+
+
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <!-- allss is coming from the variable declared in the beginning of the ts file -->
+      <!-- <tr *ngFor="let s of allss;let i=index" [ngClass]="{'table-success': i % 2 === 0, 'bg-info': i % 2 !== 0}"> -->
+
+        <tr *ngFor="let s of allShifts;let i=index" [ngClass]="{'table-success': i % 2 === 0, 'table-warning': i % 2 !== 0}">
+        
+        
+        <th scope="row">{{i+1}}</th>
+        <td>{{s.assignedOn}}</td>&nbsp;
+        <td>{{s.shiftName}}</td>&nbsp;
+        <td>{{s.startDate}}</td>&nbsp;
+        <td>{{s.endDate}}</td>&nbsp;
+        <td>{{s.shiftStartTime}}</td>&nbsp;
+        <td>{{s.shiftEndTime}}</td>&nbsp;
+        <!-- <td>{{s.sloyeeId}}</td>&nbsp;  -->
+
+               
+       &nbsp;
+
+        <td><button class="btn btn-danger" (click)="deletePost(s.id)">DELETE</button>
+
+        <td>
+          <button class="btn btn-primary">
+            <a style="color: white;"[routerLink]="['edit',s.id]">UPDATE</a>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+ 
+  
+
+  

@@ -1,0 +1,43 @@
+
+<br/>
+<br/>
+<br/>
+<table class="table" class="p-3 m-auto class=text-center">
+    <thead>
+      <tr> 
+        <th scope="col">Assigned On</th>&nbsp;
+        <th scope="col">Shift Name</th>&nbsp;
+        <th scope="col">Start Date</th>&nbsp;
+        <th scope="col">End Date</th>&nbsp;
+        <th scope="col">Shift Start Time</th>&nbsp;
+        <th scope="col">Shift End Time</th>&nbsp;
+        <th scope="col">Employee Id</th>&nbsp;
+
+      </tr>
+    </thead>
+<!-- <tbody>
+  <tr *ngFor="let s of obj;let i=index">
+    <td>{{s.employeeId}}</td>
+
+  </tr>
+</tbody> -->
+
+    <tbody>
+      <tr class="text-center" *ngFor="let s of employeeData; let i=index">
+        
+        <td>{{s.assignedOn}}</td>&nbsp;
+        <td>{{s.shiftName}}</td>&nbsp;
+        <td>{{s.startDate}}</td>&nbsp;
+        <td>{{s.endDate}}</td>&nbsp;
+
+        <td>{{s.shiftStartTime}}</td>&nbsp;
+        <td>{{s.shiftEndTime}}</td>&nbsp;
+        <td>{{s.employeeId}}</td>&nbsp;       
+       &nbsp;
+
+      </tr>
+    </tbody>
+  </table>
+
+	
+
